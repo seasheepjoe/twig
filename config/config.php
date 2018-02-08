@@ -10,5 +10,6 @@ $config = [
     'routes' => [
         'home'    => 'Main:home',
         'contact' => 'Main:contact',
+        'files'   => 'Main:file',
     ]
 ];

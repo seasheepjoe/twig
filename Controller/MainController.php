@@ -29,4 +29,13 @@ class MainController
 
         return $response;
     }
+
+    public function fileAction() 
+    {
+        global $twig;
+        $template = $twig->load('file.html.twig');
+        $response = $template->render();
+
+        return $response;
+    }
 }
