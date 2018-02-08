@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block page_title %}{{ parent() }} - Home{% endblock %}
+
+{% block content %}
+<h1>Home</h1>
+<p>Hello {{ username }}</p>
+
+{% for article in posts %}
+<article>
+    <h2><a href="article.php?id={{ article['id'] }}">{{ article['title'] }}</a></h2>
+    <div>{{ article['content']|nl2br }}</div>
+</article>
+<hr>
+{% endfor %}
+{% endblock %}
